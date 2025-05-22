@@ -1,8 +1,8 @@
 public interface Stack {
 
     void push(Object item);
-    Object pop();
-    void peek();
+    static Object pop();
+    void peek() throws MyEmptyStackException;
     boolean isEmpty();
 
 
